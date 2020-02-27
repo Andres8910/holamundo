@@ -1,13 +1,10 @@
-# Pregunta un dato hasta que sea correcto, haciendo validaciones usando
-# expresiones regulares.
+#EN ESTE PROGRAMA SE PREGUNTA UN DATO HASTA QUE SEA CORRECTO Y LUEGO SE VALIDA
 
-# Importa el módulo requerido para usar Regular Expressions.
+# AQUI SE IMPORTA EL MODULO RE PARA USAR EXRESIONES
 import re
 
 def main():
-  # Infinty Loop - Itera hasta que se presenta un break
-  # Estará preguntando el dato, mientras no cumpla con el patrón de la
-  # expesión regular.
+  # Infinty loop - repite hasta que este un break y se acaba, si no se escribe bien se va estar repitiendo
   while True:
     strRFC = input("Dame el RFC: ")
     coincide = re.search("^[A-Z]{4}-[0-9]{6}-[A-Z0-9]{3}$", strRFC)

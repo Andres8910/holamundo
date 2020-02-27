@@ -1,28 +1,26 @@
-# Pregunta diferentes tipos de datos, sin validación.
-
-# Importa el módulo requerido para usar datos de tipo Date.
+#Aqui se preguntan datos con inputs
+#Aqui se importa datetime para la fecha
 import datetime
-# Los datos se tienen, se preguntan o se calculan.
-# y pueden ser de diferente tipo.
-# Notación húngara utilizada:
-#   str   string
-#   i     int
-#   f     float
-#   dt    date
+
+#Str - es una cadena de texto
+#int - Numero natural
+#Float - es un numero con decimales
+#dt - es para fecha
 
 
 def main():
- # Los datos string se preguntan y procesan sin intermediación.
+ #con elinput ya esta predeterminado como cadena
  strDato = input("Dame un dato string: ")
- # Los datos numéricos se preguntan por intermediación.
+ # se define una variable , la pregunta y luego se define como tipo entero.
  _iDato = input("Dame un dato entero: ")
  iDato = int(_iDato)
  _fDato = input("Dame un dato float: ")
  fDato =float(_fDato)
- # Los datos date se preguntan por intermediación.
+ # aqui se pregunta la fecha.
  _dtDato = input("Dame una fecha yyyy/mm/dd: ")
- # [n,m] Extrae de la posición n a la posición m,sin incluir m.
- # [-m:] Extrae desde la posición m, de atrás para adelante, hasta el final.
+ # en los corchetes [a,b] se extrae desde la "a" hasta la "b" pero sin incluir "b" 
+
+ # en [-a:] se extrae desde la primera posicion "a", de atras hacia delante, hasta que acabe
 
  anio=_dtDato[0:4]
  mes=_dtDato[5:7]
