@@ -1,2 +1,2 @@
-from usoregex import main
+from preguntaestructurado import main
 main()
